@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Github User search </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body>
+    <div class="mx-auto my-20 w-96">
+        <!-- * search  -->
+        <form
+          id="form"
+          class="flex w-full pl-5 mb-5 border border-gray-600 shadow-lg"
+        >
+          <input
+            type="text"
+            name="username"
+            placeholder="Enter github username"
+            class="w-full outline-none"
+          />
+          <button
+            type="submit"
+            class="p-5 py-2 text-white bg-gray-600 border hover:bg-gray-700"
+          >
+            Search
+          </button>
+        </form>
+
+        <!-- profile section  -->
+        <section class="border border-gray-600 shadow-lg">
+          <!--  user image and name  -->
+          <div class="flex items-center gap-4 py-5 ml-5">
+            <img
+              id="avatar"
+              class="w-20 rounded-md"
+              src="./assets/avatar.png"
+              alt="profile image"
+            />
+            <div>
+              <p id="username"> Username</p>
+              <p id="join"> Join at </p>
+            </div>
+          </div>
+  
+          <!-- repos and following  -->
+          <div class="flex items-center justify-around py-4 mx-5 my-2 text-center bg-gray-200 rounded-md ">
+            <div>
+              <p> Repos</p>
+              <p  id="repos"> 0 </p>
+            </div>
+            <div>
+              <p> Following </p>
+              <p  id="following"> 0 </p>
+            </div>
+            <div>
+              <p> Followers </p>
+              <p id="followers"> 0 </p>
+            </div>
+          </div>
+          <!-- social link -->
+          <div class="ml-6">
+            <div class="flex gap-2 py-1">
+              <img src='./assets/map-pin.svg' alt="my location" />
+              <p id="location"> Null </p>
+            </div>
+  
+            <div class="flex gap-2 py-1">
+              <img src="./assets/building-office-2.svg" alt="office" />
+              <p id="office"> null </p>
+            </div>
+            <div class="flex gap-2 py-1">
+              <img src="./assets/x.jpg" alt="x account" class="w-6" />
+              <p id="x"> null </p>
+            </div>
+          </div>
+          <p class="py-4 mt-3 text-center bg-gray-200"> Thank You </p>
+        </section>
+      </div>
+      <script src="./script.js"></script>
+</body>
+</html>
